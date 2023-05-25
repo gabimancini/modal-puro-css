@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal Box</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main> 
+            <input type="checkbox" id="modal__toggle" />
+            <label for="modal__toggle">Abrir modal</label>
+            <div id="modal__container" for="modal__toggle">
+                <div class="modal__box">
+                    <label for="modal__toggle" class="modal__close">x</label>
+                    <img src="shoes.jpg" />
+                    <h3>Título modal</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia a atque quisquam aliquam iusto
+                        voluptatem amet distinctio et quasi aut velit deserunt nesciunt unde consequuntur asperiores
+                        sint fugiat, maxime fugit.</p>
+                    <button id="modal__button">Comprar</button>
+                </div>
+            </div>
+        </div>
+    <script>
+        let btn = document.querySelector("#modal__button");
+        btn.addEventListener("click", () => {
+            alert("Compraste el producto")
+        })
+    </script>
+</body>
+
+</html>

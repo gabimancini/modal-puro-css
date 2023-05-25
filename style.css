@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    padding: 5%;
+    height: 1000px;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Toggle */
+#modal__toggle {
+    display: none;
+}
+
+#modal__toggle+label {
+    background-color: rgb(127, 217, 255);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* Container */
+#modal__container {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+}
+
+#modal__toggle:checked~#modal__container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+/* Box */
+.modal__box {
+    background-color: white;
+    max-width: 300px;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+}
+
+.modal__box h3 {
+    color: darkgray;
+}
+
+/* Close */
+.modal__close {
+    cursor: pointer;
+    float: right;
+}
+
+/* Comprar*/
+#modal__button {
+    background-color: rgb(155, 207, 77);
+    border: none;
+    padding: 5px 15px;
+    border-radius: 10px;
+}
